@@ -11,4 +11,4 @@ A simple Todo List application built with HTML, CSS, and JavaScript. This app al
 ## Instalasi
 1. Clone repositori ini:
    ```bash
-   git clone <url-repositori>
+   git clone https://github.com/sultanfauzi/Todo-Apps.git
