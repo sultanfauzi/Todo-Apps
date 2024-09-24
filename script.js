@@ -4,9 +4,7 @@ const inputTask = document.getElementById('task-input');
         let warningMessage;
 
         function checkInput() {
-            // Mengaktifkan tombol jika input tidak kosong
             addButton.disabled = inputTask.value.trim() === '';  
-            // Menghapus pesan peringatan saat pengguna mengetik
             if (warningMessage) {
                 warningMessage.remove();  
                 warningMessage = null;
@@ -14,17 +12,15 @@ const inputTask = document.getElementById('task-input');
         }
         
         function addTask() {
-            // Jika input kosong
             if (inputTask.value === '') {
-                if (!warningMessage) { // Cek jika pesan peringatan belum ada
+                if (!warningMessage) { 
                     warningMessage = document.createElement('p');
                     warningMessage.textContent = "You must enter a task!";
                     taskList.appendChild(warningMessage);
                     warningMessage.style.color = 'red';
                     warningMessage.style.fontStyle = 'italic';
                 }
-                addButton.disabled = true; // Menonaktifkan tombol
-                return; // Keluar dari fungsi
+                return; 
             }
 
             // Jika input valid, tambahkan tugas
@@ -35,7 +31,7 @@ const inputTask = document.getElementById('task-input');
             let spanElement = document.createElement("span");
             spanElement.innerHTML = '\u00d7';
             li.appendChild(spanElement);
-            addButton.disabled = false; // Mengaktifkan tombol kembali
+            addButton.disabled = false;
         }
 
         taskList.addEventListener("click", function(e) {
@@ -47,4 +43,4 @@ const inputTask = document.getElementById('task-input');
             }
         });
 
-   ;
+ 
