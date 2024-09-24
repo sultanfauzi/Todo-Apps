@@ -1,6 +1,6 @@
 # Todo App
 
-A simple Todo List application built with HTML, CSS, and JavaScript. This app allows users to add, remove, and check tasks, with data persistence using local storage.
+A simple Todo List application built with HTML, CSS, and JavaScript. This app allows users to add, remove, and check tasks.
 
 ## Fitur
 - Tambah tugas baru
